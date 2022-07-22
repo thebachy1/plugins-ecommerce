@@ -1,0 +1,59 @@
+@use "../../Colors";
+
+@font-face {
+  font-family: "paralucent";
+  src: url("https://use.typekit.net/af/ae48c7/00000000000000007735f0d5/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/ae48c7/00000000000000007735f0d5/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/ae48c7/00000000000000007735f0d5/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+.header {
+  &__nav {
+    background-color: Colors.$main-grey;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__pages {
+    margin: 10px;
+    color: Colors.$light-grey;
+    font-family: "paralucent";
+  }
+
+  &__logo {
+    width: 10%;
+    margin: 20px 0;
+    filter: invert(74%) sepia(70%) saturate(0%) hue-rotate(195deg)
+      brightness(104%) contrast(91%);
+  }
+
+  &__search {
+    width: 2%;
+    margin: 20px 20px;
+    filter: invert(74%) sepia(70%) saturate(0%) hue-rotate(195deg)
+      brightness(104%) contrast(91%);
+  }
+
+  &__cart {
+    width: 2%;
+    margin: 20px 20px;
+    filter: invert(74%) sepia(70%) saturate(0%) hue-rotate(195deg)
+      brightness(104%) contrast(91%);
+  }
+}
