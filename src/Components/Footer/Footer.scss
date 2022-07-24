@@ -1,0 +1,31 @@
+@use "../../Colors";
+@use "../../Fonts";
+
+.footer {
+  background-color: Colors.$main-green;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  &__main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: Colors.$main-grey;
+    font-family: paralucent;
+  }
+
+  &__idea {
+    max-width: 20%;
+  }
+
+  &__promise {
+    max-width: 20%;
+  }
+
+  &__copyright {
+    text-align: center;
+    padding: 15px;
+    font-family: paralucent;
+  }
+}
