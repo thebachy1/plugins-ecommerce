@@ -1,4 +1,5 @@
 import react, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Home.scss";
 import bannerImage from "../../assets/LPF.jpg";
 
@@ -16,7 +17,9 @@ export default function Home() {
               We create software, hardware and applications for the music
               industry.
             </p>
-            <button>Shop plugins</button>
+            <Link to="/products">
+              <button className="home__productsButton">Shop plugins</button>
+            </Link>
           </div>
         </div>
       </div>
