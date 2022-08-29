@@ -1,0 +1,60 @@
+@use "../../Colors";
+@use "../../Fonts";
+
+.home {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__banner {
+    margin: 5% 0;
+  }
+
+  &__imageContainer {
+    max-width: 90%;
+    margin: auto;
+    > img {
+      max-width: 100%;
+    }
+  }
+
+  &__bannerInfo {
+    text-align: center;
+    margin: auto;
+    font-family: paralucent;
+    margin: 2% 0;
+
+    > h1 {
+      font-size: 3.5rem;
+    }
+
+    > p {
+      font-size: 2rem;
+    }
+
+    > button {
+      margin: 3% 0;
+      background: #5e5df0;
+      border-radius: 999px;
+      box-shadow: #5e5df0 0 10px 20px -10px;
+      box-sizing: border-box;
+      color: #ffffff;
+      cursor: pointer;
+      font-family: paralucent;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 8px 18px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      word-break: break-word;
+      border: 0;
+    }
+  }
+}
