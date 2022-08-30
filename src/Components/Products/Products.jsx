@@ -23,6 +23,7 @@ export default function Products() {
                   image: product.image,
                   name: product.name,
                   price: product.price,
+                  about: product.about,
                 }}
               >
                 <button class="button-74">Go to product</button>

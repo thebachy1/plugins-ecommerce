@@ -4,7 +4,8 @@ import "./Product.scss";
 
 export default function Product() {
   const location = useLocation();
-  const { image, name, price } = location.state;
+  const { image, name, price, about } = location.state;
+  console.log();
   return (
     <div className="product__container">
       <div className="product__imageContainer">
@@ -15,6 +16,10 @@ export default function Product() {
       <button class="button-19" role="button">
         Buy now
       </button>
+      <div className="product__aboutContainer">
+        <h2>About this product</h2>
+        <p>{about}</p>
+      </div>
     </div>
   );
 }

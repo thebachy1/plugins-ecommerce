@@ -3,20 +3,23 @@
     "id": 1,
     "name": "Sunday Bloody Sunday",
     "price": "$90",
-    "image": "https://www.magix.com/fileadmin/user_upload/Produkte/Pro/Audio-Plugin-Union/Brandpage/i_0f71ad/audio-plugin-union-colorfx-suite-screenshot2-int.jpg"
+    "image": "https://www.magix.com/fileadmin/user_upload/Produkte/Pro/Audio-Plugin-Union/Brandpage/i_0f71ad/audio-plugin-union-colorfx-suite-screenshot2-int.jpg",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus ex, eleifend eu sagittis vitae, consequat eu leo. Nulla facilisi. Vivamus fermentum blandit nisl, eget malesuada metus dictum sodales. Donec hendrerit laoreet gravida. Sed lobortis mi ac velit auctor, nec dignissim quam sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse a laoreet odio. Proin nec tortor ex. Integer rhoncus nibh sit amet commodo mattis. Curabitur vestibulum eros sit amet interdum aliquam. Duis sit amet laoreet nisl. Pellentesque ac venenatis justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi imperdiet nec arcu sit amet pretium. Morbi tellus justo, pellentesque eget nisi id, euismod posuere enim. Nullam in malesuada elit."
   },
 
   {
     "id": 2,
     "name": "Cherry Chapstick",
     "price": "$70",
-    "image": "https://www.magix.com/fileadmin/user_upload/Produkte/Pro/Audio-Plugin-Union/Brandpage/i_5ce90c/audio-plugin-union-corefx-suite-screenshot3-int.jpg"
+    "image": "https://www.magix.com/fileadmin/user_upload/Produkte/Pro/Audio-Plugin-Union/Brandpage/i_5ce90c/audio-plugin-union-corefx-suite-screenshot3-int.jpg",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus ex, eleifend eu sagittis vitae, consequat eu leo. Nulla facilisi. Vivamus fermentum blandit nisl, eget malesuada metus dictum sodales. Donec hendrerit laoreet gravida. Sed lobortis mi ac velit auctor, nec dignissim quam sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse a laoreet odio. Proin nec tortor ex. Integer rhoncus nibh sit amet commodo mattis. Curabitur vestibulum eros sit amet interdum aliquam. Duis sit amet laoreet nisl. Pellentesque ac venenatis justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi imperdiet nec arcu sit amet pretium. Morbi tellus justo, pellentesque eget nisi id, euismod posuere enim. Nullam in malesuada elit."
   },
 
   {
     "id": 3,
     "name": "Champagne Coast",
     "price": "$85",
-    "image": "https://cdn.dribbble.com/users/39898/screenshots/15148185/media/986894962052a8999a2872b3748aed05.png?compress=1&resize=400x300"
+    "image": "https://cdn.dribbble.com/users/39898/screenshots/15148185/media/986894962052a8999a2872b3748aed05.png?compress=1&resize=400x300",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus ex, eleifend eu sagittis vitae, consequat eu leo. Nulla facilisi. Vivamus fermentum blandit nisl, eget malesuada metus dictum sodales. Donec hendrerit laoreet gravida. Sed lobortis mi ac velit auctor, nec dignissim quam sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse a laoreet odio. Proin nec tortor ex. Integer rhoncus nibh sit amet commodo mattis. Curabitur vestibulum eros sit amet interdum aliquam. Duis sit amet laoreet nisl. Pellentesque ac venenatis justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi imperdiet nec arcu sit amet pretium. Morbi tellus justo, pellentesque eget nisi id, euismod posuere enim. Nullam in malesuada elit."
   }
 ]

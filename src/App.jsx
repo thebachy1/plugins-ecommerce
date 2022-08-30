@@ -9,14 +9,13 @@ import Product from "./Components/Product/Product";
 import productsMock from "./Mocks/Products.json";
 
 function App() {
-  const [products, setProducts] = useState(productsMock);
   return (
     <div className="App">
       <Header />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products products={products} />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<Product />} />
         </Routes>
       </BrowserRouter>

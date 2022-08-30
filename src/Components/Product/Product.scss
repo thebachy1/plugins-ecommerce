@@ -21,6 +21,23 @@
       box-shadow: 1px 1px 15px;
     }
   }
+
+  &__aboutContainer {
+    margin-top: 2%;
+    font-family: paralucent;
+    text-align: justify;
+    width: 70%;
+
+    > h2 {
+      text-align: center;
+      margin-bottom: 2%;
+      font-size: 2.5rem;
+    }
+
+    > p {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .button-19 {
