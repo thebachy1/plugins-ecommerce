@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Products.scss";
-import bannerImage from "../../assets/logo.svg";
 import productsMock from "../../Mocks/Products.json";
 
 export default function Products() {

@@ -15,8 +15,10 @@
   &__imageContainer {
     max-width: 90%;
     margin: auto;
+
     > img {
       max-width: 100%;
+      box-shadow: 1px 1px 20px;
     }
   }
 
@@ -25,6 +27,7 @@
     margin: auto;
     font-family: paralucent;
     margin: 2% 0;
+    text-shadow: 1px 1px 2px;
 
     > h1 {
       font-size: 3.5rem;
