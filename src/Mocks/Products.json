@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Sunday Bloody Sunday",
+    "price": "$90",
+    "image": "https://www.magix.com/fileadmin/user_upload/Produkte/Pro/Audio-Plugin-Union/Brandpage/i_0f71ad/audio-plugin-union-colorfx-suite-screenshot2-int.jpg"
+  },
+
+  {
+    "id": 2,
+    "name": "Cherry Chapstick",
+    "price": "$70",
+    "image": "https://www.magix.com/fileadmin/user_upload/Produkte/Pro/Audio-Plugin-Union/Brandpage/i_5ce90c/audio-plugin-union-corefx-suite-screenshot3-int.jpg"
+  },
+
+  {
+    "id": 3,
+    "name": "Champagne Coast",
+    "price": "$85",
+    "image": "https://cdn.dribbble.com/users/39898/screenshots/15148185/media/986894962052a8999a2872b3748aed05.png?compress=1&resize=400x300"
+  }
+]
