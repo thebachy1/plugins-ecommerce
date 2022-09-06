@@ -1,6 +1,7 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./Product.scss";
+import file from "../../assets/test.txt";
 
 export default function Product() {
   const location = useLocation();
@@ -13,9 +14,12 @@ export default function Product() {
       </div>
       <h2>{name}</h2>
       <h3>{price}</h3>
-      <button class="button-19" role="button">
-        Buy now
-      </button>
+      <Link class="button-19" to={file} target="_blank" download>
+        {/* <button class="button-19" role="button">
+          Buy now
+        </button> */}
+        Buy Now
+      </Link>
       <div className="product__aboutContainer">
         <h2>About this product</h2>
         <p>{about}</p>
