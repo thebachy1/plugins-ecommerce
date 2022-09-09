@@ -26,7 +26,7 @@ export default function Products() {
                   about: product.about,
                 }}
               >
-                <button class="button-74">Go to product</button>
+                <button className="button-74">Go to product</button>
               </Link>
             </div>
           </div>

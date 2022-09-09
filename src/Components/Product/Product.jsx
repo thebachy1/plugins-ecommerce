@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
+import PaypalCheckoutButton from "../PaypalCheckoutButton/PaypalCheckoutButton";
 import "./Product.scss";
 import file from "../../assets/test.txt";
 
@@ -14,12 +15,14 @@ export default function Product() {
       </div>
       <h2>{name}</h2>
       <h3>{price}</h3>
-      <Link class="button-19" to={file} target="_blank" download>
+      {/* <Link className="button-19" to={file} target="_blank" download>
         {/* <button class="button-19" role="button">
           Buy now
         </button> */}
-        Buy Now
-      </Link>
+      {/* </Link> */}
+      <div className="product__paypalButton">
+        <PaypalCheckoutButton name={name} price={price} />
+      </div>
       <div className="product__aboutContainer">
         <h2>About this product</h2>
         <p>{about}</p>
