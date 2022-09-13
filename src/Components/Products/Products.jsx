@@ -16,7 +16,7 @@ export default function Products() {
             </div>
             <div className="product-info">
               <h5>{product.name}</h5>
-              <h6>{product.price}</h6>
+              <h6>${product.price}</h6>
               <Link
                 to={`/products/${product.id}`}
                 state={{

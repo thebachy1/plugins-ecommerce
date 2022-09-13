@@ -14,7 +14,7 @@ export default function Product() {
         <img src={image} alt="Product display image" />
       </div>
       <h2>{name}</h2>
-      <h3>{price}</h3>
+      <h3>${price}</h3>
       {/* <Link className="button-19" to={file} target="_blank" download>
         {/* <button class="button-19" role="button">
           Buy now
