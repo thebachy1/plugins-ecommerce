@@ -1,13 +1,12 @@
 import React from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { Products } from "../Products/Products";
 import PaypalCheckoutButton from "../PaypalCheckoutButton/PaypalCheckoutButton";
 import "./Product.scss";
-import file from "../../assets/test.txt";
 
 export default function Product() {
   const location = useLocation();
-  const { image, name, price, about } = location.state;
-  console.log();
+  const { image, name, price, about } = location.state as Products;
   return (
     <div className="product__container">
       <div className="product__imageContainer">
@@ -15,11 +14,6 @@ export default function Product() {
       </div>
       <h2>{name}</h2>
       <h3>${price}</h3>
-      {/* <Link className="button-19" to={file} target="_blank" download>
-        {/* <button class="button-19" role="button">
-          Buy now
-        </button> */}
-      {/* </Link> */}
       <div className="product__paypalButton">
         <PaypalCheckoutButton name={name} price={price} />
       </div>

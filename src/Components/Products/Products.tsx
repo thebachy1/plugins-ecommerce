@@ -5,13 +5,21 @@ import "./Products.scss";
 import productsMock from "../../Mocks/Products.json";
 import db from "../../Firebase/firebaseConfig";
 
+export interface Products {
+  id?: number;
+  image: string;
+  name: string;
+  price: number;
+  about: string;
+}
+
 export default function Products() {
-  const [products, setProducts] = useState();
+  const [products, setProducts] = useState<Products[]>([]);
 
   useEffect(() => {
     const getData = async () => {
       const data = await getDocs(collection(db, "Products"));
-      const dataArray = [];
+      const dataArray: any = [];
 
       data.forEach((product) => {
         dataArray.push(product.data());

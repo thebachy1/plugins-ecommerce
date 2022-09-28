@@ -1,14 +1,19 @@
 import { useState } from "react";
 import { PayPalButtons } from "@paypal/react-paypal-js";
 
-const PaypalCheckoutButton = (props) => {
+interface Props {
+  name: string;
+  price: number;
+}
+
+const PaypalCheckoutButton = (props: Props) => {
   const { name } = props;
   const { price } = props;
 
   const [paidFor, setPaidFor] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleApprove = (orderId) => {
+  const handleApprove = (orderId: string) => {
     setPaidFor(true);
   };
 
@@ -19,7 +24,6 @@ const PaypalCheckoutButton = (props) => {
   if (error) {
     alert(error);
   }
-  console.log(name, price);
 
   return (
     <PayPalButtons
@@ -36,19 +40,19 @@ const PaypalCheckoutButton = (props) => {
             {
               description: name,
               amount: {
-                value: price,
+                value: price.toString(),
               },
             },
           ],
         });
       }}
       onApprove={async (data, actions) => {
-        const order = await actions.order.capture();
+        const order = await actions.order?.capture();
         console.log("order", order);
 
         handleApprove(data.orderID);
       }}
-      onError={(err) => {
+      onError={(err: any) => {
         setError(err);
         console.log("Paypal Checkout onError", err);
       }}
