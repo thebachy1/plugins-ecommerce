@@ -6,7 +6,7 @@ import productsMock from "../../Mocks/Products.json";
 import db from "../../Firebase/firebaseConfig";
 
 export interface Products {
-  id?: number;
+  _id?: number;
   image: string;
   name: string;
   price: number;
@@ -17,18 +17,9 @@ export default function Products() {
   const [products, setProducts] = useState<Products[]>([]);
 
   useEffect(() => {
-    const getData = async () => {
-      const data = await getDocs(collection(db, "Products"));
-      const dataArray: any = [];
-
-      data.forEach((product) => {
-        dataArray.push(product.data());
-      });
-
-      setProducts(dataArray);
-    };
-
-    getData();
+    fetch("http://localhost:3000/api/products")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
   }, []);
 
   console.log(products);
@@ -37,7 +28,7 @@ export default function Products() {
     <section className="products">
       {products &&
         products?.map((product) => (
-          <div className="product-card" key={product.id}>
+          <div className="product-card" key={product._id}>
             <div className="product-image">
               <img src={product.image} />
             </div>
@@ -45,7 +36,7 @@ export default function Products() {
               <h5>{product.name}</h5>
               <h6>${product.price}</h6>
               <Link
-                to={`/products/${product.id}`}
+                to={`/products/${product._id}`}
                 state={{
                   image: product.image,
                   name: product.name,
